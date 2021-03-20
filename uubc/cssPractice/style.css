@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+}
+.red {
+    color:red;
+}
+.blue {
+    color:blue;
+}
+.green {
+    color:green;
+}
+.big {
+    font-size:x-large;
+}
+.tiny {
+    font-size: xx-small;
+}
+.center {
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
+}
+.fontChange {
+    font-style: oblique;
+}
+.multiple {
+    color: orange;
+    font-size: x-large;
+    font-weight: bold;
+}
+.styledFont {
+    color: green;
+    font-style: unset;
+    font-size: large;
+
+}
+#styledImage {
+    border-style: solid;
+    border-width: thick;
+    border-color: yellowgreen;
+}

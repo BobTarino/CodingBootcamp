@@ -1,0 +1,23 @@
+h1 {
+    background-color: #404040;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+#bio-image {
+    float:left;
+}
+#main-bio p {
+    position: absolute;
+    margin: 0 auto 30px auto;
+    left: 1000px;
+}
+#contact-info {
+    float: right;
+}
+
+#contact-info a {
+    color: blue;
+}
