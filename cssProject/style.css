@@ -6,17 +6,13 @@ h1 {
     font-size: 36px;
     margin: 0;
 }
-#bio-image {
-    float:left;
-}
+
 #main-bio p {
-    position: absolute;
+   
     margin: 0 auto 30px auto;
     left: 1000px;
 }
-#contact-info {
-    float: right;
-}
+
 
 #contact-info a {
     color: blue;
