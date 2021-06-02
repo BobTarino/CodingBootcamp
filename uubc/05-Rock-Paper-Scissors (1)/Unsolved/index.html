@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <h1 style="text-align:center; margin-top:20%;">
+      Let's play Rock Paper Scissors!<br />Refresh to play again!
+    </h1>
+    <script type="text/javascript">
+      // TODO: Create an array of the three game choices (Rock, Paper, or Scissors).
+      var gameChoices = ['rock', 'paper', 'scissor'];
+  
+      
+
+      // TODO: Create variables to hold the number of wins, losses, and ties. They start at 0.
+      var wins = 0;
+      var losses = 0;
+      var ties = 0;
+      console.log(wins, losses, ties);
+
+      for (var i = 0; i < 3; i++) {
+        // TODO: Randomly choose a choice from the gameChoices array. This is the computer's turn.
+        var computerTurn = 
+        gameChoices[Math.floor(Math.random() * gameChoices.length)];
+
+
+        // TODO: Collect the user's response and convert to lower case. This is the user's turn.
+        var userTurn = prompt('Enter rock, paper, or scissor to play!');
+        userTurn = userTurn.toLowerCase();
+        console.log(userTurn);
+
+        // TODO: Create the game logic to run if the user chooses a valid game choice
+        if (userTurn === 'rock' || userTurn === 'paper' || userTurn === 'scissor') {
+          alert('The computer chose ' + computerTurn);
+
+          // Win/lose conditions:
+          if (
+            (userTurn === 'rock' && computerTurn === 'scissor') ||
+            (userTurn === 'scissor' && computerTurn === 'paper') ||
+            (userTurn === 'paper' && computerTurn === 'rock')
+          ) {
+            wins++;
+            alert("You've won " + wins + ' time(s)!');
+          } else if (userTurn === computerTurn) {
+            ties++;
+            alert("You've tied " + ties + ' time(s).');
+          } else {
+            losses++;
+            alert("You've lost " + losses + ' time(s).');
+          }
+        } else {
+          alert("Please choose 'rock', 'paper' or 'scissor'!");
+        }
+      }
+
+      // TODO: When the game is over, alert the final total to the user. We can use the \n character to make a line break.
+      alert(
+        'Total wins: ' +
+          wins +
+          '\nTotal ties: ' +
+          ties +
+          '\nTotal losses: ' +
+          losses
+      );
+
+    </script>
+  </body>
+</html>
